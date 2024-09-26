@@ -40,10 +40,6 @@ tasks.register('javadocJar', Jar) {
     from javadoc.destinationDir
 }
 
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
 //at the end of the file
 afterEvaluate{
     publishing {
