@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 31  // Changed compileSdk to compileSdkVersion
+    compileSdkVersion 34  // Changed compileSdk to compileSdkVersion
 
     defaultConfig {
-        minSdkVersion 15  // Changed minSdk to minSdkVersion
-        targetSdkVersion 31  // Changed targetSdk to targetSdkVersion
+        minSdkVersion 19  // Changed minSdk to minSdkVersion
+        targetSdkVersion 34  // Changed targetSdk to targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -41,4 +42,17 @@ tasks.register('javadocJar', Jar) {
 artifacts {
     archives javadocJar
     archives sourcesJar
+}
+//at the end of the file
+afterEvaluate{
+    publishing {
+        publications {
+            release(MavenPublication){
+                from components.release
+                groupId = 'com.github.mfarhanmail'
+                artifactId = 'progressfab'
+                version = '1.0'
+            }
+        }
+    }
 }

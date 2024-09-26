@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dmitrymalkovich.android.progressfabsample.ScrollingActivity">
+    tools:context="com.progressfab.android.progressfabsample.ScrollingActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -29,7 +29,7 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.dmitrymalkovich.android.ProgressFloatingActionButton
+    <com.progressfab.android.ProgressFloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
@@ -46,11 +46,13 @@
         <ProgressBar
             style="@style/Widget.AppCompat.ProgressBar"
             android:layout_width="wrap_content"
+            android:indeterminate="true"
+            android:progress="100"
             android:layout_height="wrap_content" />
 
-    </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+    </com.progressfab.android.ProgressFloatingActionButton>
 
-    <com.dmitrymalkovich.android.ProgressFloatingActionButton
+    <com.progressfab.android.ProgressFloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
@@ -58,6 +60,7 @@
         android:clickable="true">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_backup_black_24dp"
@@ -66,8 +69,10 @@
         <ProgressBar
             style="@style/Widget.AppCompat.ProgressBar"
             android:layout_width="wrap_content"
+            android:indeterminate="true"
+            android:progress="100"
             android:layout_height="wrap_content" />
 
-    </com.dmitrymalkovich.android.ProgressFloatingActionButton>
+    </com.progressfab.android.ProgressFloatingActionButton>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

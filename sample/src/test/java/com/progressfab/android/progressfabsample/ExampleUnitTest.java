@@ -1,4 +1,4 @@
-package com.dmitrymalkovich.android.progressfabsample;
+package com.progressfab.android.progressfabsample;
 
 import org.junit.Test;
 
