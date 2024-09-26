@@ -1,12 +1,12 @@
 package com.progressfab.android.progressfabsample;
 
 import android.os.Bundle;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-import com.dmitrymalkovich.android.progressfabsample.R;
-import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class ScrollingActivity extends AppCompatActivity {
 
